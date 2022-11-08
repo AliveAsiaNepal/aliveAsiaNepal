@@ -10496,6 +10496,18 @@ a.view:hover {
   .shape {
     bottom: -2px; } }
 
+.bank-details b {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  padding-right: 10px; /* Ensures colon does not overlay the text */
+}
+
+.alignMe b::after {
+  content: ":";
+  position: absolute;
+  right: 10px;
+}
 .box-wrap h4 a {
   font-size: 24px;
   font-weight: 600;
